@@ -1,10 +1,13 @@
-import { useState } from 'react';
+import './index.css'
+import Home from './pages/Home/Home.tsx'
 
 const App = () => {
 
   return (
     <>
-      App
+      <main>
+        <Home />
+      </main>
     </>
   )
 }
