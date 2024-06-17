@@ -1,16 +1,16 @@
-import ProjectCard from '../../../../components/ProjectCard';
 import '../../../../index.css'
 
-
+import ProjectCard from '../../../../components/ProjectCard';
+import Section from '../../../../components/Section';
 
 const Projects = () => {
     return (
         <>
-            <section className="bg-stone-300">
-                <div className="h-screen flex">
-                    <div className="basis-3/6 mx-auto my-auto">
-                        <h4 className="text-3xl text-custom-dark mb-10">02. <span className="text-custom-secondary font-semibold">Projects</span></h4>
-                        <div className="grid gap-4 md:grid-cols-2">
+            <Section id='projects'>
+                <div className="sm:h-screen flex">
+                    <div className="md:basis-3/6 mx-auto my-auto md:p-0 p-8">
+                        <h4 className="text-3xl text-custom-dark mb-10 font-bold">02. <span className="text-custom-secondary font-bold">Projects</span></h4>
+                        <div className="grid gap-4 xl:grid-cols-2">
                             <ProjectCard
                             title='Event Registration Management System'
                             detail='This project involved developing a user-friendly platform to streamline the registration
@@ -39,7 +39,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </Section>
         </>
     )
 }

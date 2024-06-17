@@ -1,13 +1,15 @@
 import '../../../../index.css'
 
+import Section from '../../../../components/Section';
+
 const About = () => {
     return (
         <>
-            <section className="bg-stone-300">
-                <div className="h-screen flex">
-                    <div className="basis-3/6 mx-auto my-auto">
-                        <h4 className="text-3xl text-custom-dark mb-10">03. <span className="text-custom-secondary font-semibold">Skills</span></h4>
-                        <div className="grid grid-flow-col gap-16">
+            <Section id='skills'>
+                <div className="sm:h-screen flex">
+                    <div className="md:basis-3/6 mx-auto my-auto md:p-0 p-8">
+                        <h4 className="text-3xl text-custom-dark mb-10 font-bold">03. <span className="text-custom-secondary font-bold">Skills</span></h4>
+                        <div className="md:grid md:grid-flow-col gap-16">
                             <div className="col-span-6 max-w-xl">
                                 <h6 className='font-semibold'>Proficient in:</h6>
                                 <ul className="list-inside list-disc">
@@ -30,7 +32,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </Section>
         </>
     )
 }
