@@ -35,7 +35,7 @@ const Projects = () => {
                                 calculation button, the application calculates the time gaps for each segment and the final
                                 time, providing feedback on performance with analytical calculation. Users can reuse or
                                 modify the entered data for new calculations without losing previous inputs.'
-                            link_gitHub=''
+                            link_gitHub='https://github.com/AdegasDa/Triathlon_Time_Calculator'
                             technologies={['Angular', 'TypeScript']}
                             date_start='27-05-2024'
                             date_end='14-06-2024'
