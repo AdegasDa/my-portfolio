@@ -1,5 +1,9 @@
 import '../../../../index.css'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'    
+import { faArrowDownLong } from '@fortawesome/free-solid-svg-icons'
+import { faComputerMouse } from '@fortawesome/free-solid-svg-icons'
+
 import Section from '../../../../components/Section.tsx'
 
 const Hero = () => {
@@ -15,7 +19,12 @@ const Hero = () => {
                         <h2 className=" text-6xl m-0 mb-3 text-custom-secondary font-bold">Becoming A Computer Engineer.</h2>
                         <p className="text-xl max-w-lg p-0 m-0 text-custom-secondary font-bold">I am a student pursuing Computer Engineering, 
                             Brazilian and Portuguese, living in Portugal since 2019. <span className="text-custom-dark">Passionate about 
-                            technology</span>.</p>
+                            technology</span>.
+                        </p>
+                        <div className='mt-8 flex items-center'>
+                            <FontAwesomeIcon icon={faArrowDownLong} className='me-2 h-6 text-custom-light'/>
+                            <FontAwesomeIcon icon={faComputerMouse} className='h-6 text-custom-light'/>
+                        </div>
                     </div>
                 </div>
             </Section>

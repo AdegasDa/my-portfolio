@@ -4,6 +4,9 @@ import ProjectCard from '../../../../components/ProjectCard';
 import Section from '../../../../components/Section';
 
 const Projects = () => {
+    const Triathlon = 'http://localhost:5173/Triathlon_Calculator.zip';
+    const Event = 'http://localhost:5173/Event_Management.zip';
+
     return (
         <>
             <Section id='projects'>
@@ -23,6 +26,7 @@ const Projects = () => {
                             technologies={['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP']}
                             date_start='02-04-2024'
                             date_end='24-05-2024'
+                            link_folder={Event}
                             />
                             <ProjectCard
                             title='Triathlon Race Gap Calculator '
@@ -35,6 +39,7 @@ const Projects = () => {
                             technologies={['Angular', 'TypeScript']}
                             date_start='27-05-2024'
                             date_end='14-06-2024'
+                            link_folder={Triathlon}
                             />
                         </div>
                     </div>

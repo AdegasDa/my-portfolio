@@ -13,6 +13,18 @@ const NavBar = () => {
         });
     }
 
+    const Resume = 'http://localhost:5173/DanielAdegas_Resume.pdf';
+
+    const downloadFileAtUrl = (url:string) => {
+        const fileName = url.split('/').pop() || '';
+        const aTag = document.createElement('a')
+        aTag.href=url
+        aTag.setAttribute('download', fileName)
+        document.body.appendChild(aTag)
+        aTag.click()
+        aTag.remove()
+    }
+
     return (
         <>
             <header className="md:absolute inset-x-0 top-0 z-50">
@@ -29,7 +41,7 @@ const NavBar = () => {
                             <a href="#projects" className='header_a'><span className='text-custom-dark'>02.</span> Projects</a>
                             <a href="#skills" className='header_a'><span className='text-custom-dark'>03.</span> Skills</a>
                             <a href="#contact" className='header_a'><span className='text-custom-dark'>04.</span> Contact</a>
-                            <button className='header_button'>Download CV</button>
+                            <button className='header_button' onClick={() => downloadFileAtUrl(Resume)}>Resume</button>
                         </div>
                     </div>
                 </nav>

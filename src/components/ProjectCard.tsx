@@ -12,9 +12,21 @@ interface ProjectCardInterface {
     date_end: String,
     technologies: string[],
     link_gitHub: string,
+    link_folder: string,
 }
 
-const ProjectCard: React.FC<ProjectCardInterface> = ({ title, detail, technologies, link_gitHub, date_start, date_end }) => {
+const ProjectCard: React.FC<ProjectCardInterface> = ({ title, detail, technologies, link_gitHub, date_start, date_end, link_folder }) => {
+
+    const downloadFileAtUrl = (url:string) => {
+        const fileName = url.split('/').pop() || '';
+        const aTag = document.createElement('a')
+        aTag.href=url
+        aTag.setAttribute('download', fileName)
+        document.body.appendChild(aTag)
+        aTag.click()
+        aTag.remove()
+    }
+
     return (
         <motion.div
             initial={{ opacity: 1, scale: 1 }}
@@ -24,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardInterface> = ({ title, detail, technologi
             <div className='project-card bg-custom-dark p-6 flex flex-col h-full shadow-xl rounded-md'>
                 <div className='flex justify-between'>
                     <div>
-                        <a href="" className=''><FontAwesomeIcon className='h-9 text-custom-light' icon={faFolder} /></a>
+                        <button onClick={() => downloadFileAtUrl(link_folder)}><FontAwesomeIcon className='h-9 text-custom-light' icon={faFolder} /></button>
                     </div>
                     <div className='my-auto'>
                         <p className='text-custom-light'>
