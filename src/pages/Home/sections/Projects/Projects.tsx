@@ -27,7 +27,7 @@ const Projects = () => {
                             date_start='02-04-2024'
                             date_end='24-05-2024'
                             link_folder={Event}
-                            />
+                            /> 
                             <ProjectCard
                             title='Triathlon Race Gap Calculator '
                             detail='The objective of this project was to create a web application that allows users to input

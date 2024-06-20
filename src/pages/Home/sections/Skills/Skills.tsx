@@ -8,7 +8,7 @@ const About = () => {
         <>
             <Section id='skills'>
                 <div className="sm:h-screen flex">
-                    <div className="md:basis-3/6 w-11/12 mx-auto my-auto md:p-0 p-8">
+                    <div className="md:basis-3/6 w-full mx-auto my-auto md:p-0 p-8">
                         <h4 className="text-3xl text-custom-dark mb-10 font-bold">03. <span className="text-custom-secondary font-bold">Skills</span></h4>
                         <div className="grid md:grid-flow-col sm:gap-16 gap-8">
                             <div className="col-span-6 max-w-xl">
@@ -22,6 +22,7 @@ const About = () => {
                                         <SkillCard skill='Java' rate={5} />
                                         <SkillCard skill='PHP' rate={4} />
                                         <SkillCard skill='Bootstrap & Tailwind' rate={5} />
+                                        <SkillCard skill='SQL' rate={5} />
                                         <SkillCard skill='MVC architecture' rate={5} />
 
                                         {/* <li>JavaScript - Skilled in developing dynamic and interactive web applications.</li>
@@ -40,6 +41,7 @@ const About = () => {
                                     <ul className="list-inside list-disc my-4 flex-col flex gap-1">
                                         <SkillCard skill='Angular' rate={3} />
                                         <SkillCard skill='Framer Motion' rate={3} />
+                                        <SkillCard skill='Git' rate={2} />
                                         <SkillCard skill='Agile Projects' rate={3} />
                                     </ul>
                                         {/* <li>Angular - Basic understanding of this framework for building single-page applications.</li>

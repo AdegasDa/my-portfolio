@@ -3,6 +3,7 @@ import '../../../../index.css'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
     const [ menuState, setMenuState ] = useState(false);
@@ -41,7 +42,7 @@ const NavBar = () => {
                             <a href="#projects" className='header_a'><span className='text-custom-dark'>02.</span> Projects</a>
                             <a href="#skills" className='header_a'><span className='text-custom-dark'>03.</span> Skills</a>
                             <a href="#contact" className='header_a'><span className='text-custom-dark'>04.</span> Contact</a>
-                            <button className='header_button' onClick={() => downloadFileAtUrl(Resume)}>Resume</button>
+                            <button className='header_button' onClick={() => downloadFileAtUrl(Resume)}><FontAwesomeIcon icon={faDownload} className='me-1' />Resume</button>
                         </div>
                     </div>
                 </nav>
