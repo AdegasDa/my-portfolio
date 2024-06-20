@@ -44,7 +44,7 @@ const ProjectCard: React.FC<ProjectCardInterface> = ({ title, detail, technologi
                         </p>
                     </div>
                     <div>
-                        <a href={link_gitHub}><FontAwesomeIcon className='h-9 text-custom-light' icon={faGithub} /></a>
+                        <a href={link_gitHub} target='_blank'><FontAwesomeIcon className='h-9 text-custom-light' icon={faGithub} /></a>
                     </div>
                 </div>
                 <div className='flex-grow'>

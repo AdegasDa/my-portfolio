@@ -22,7 +22,7 @@ const Projects = () => {
                                     Excel. The system manager holds responsibilities for managing users, events, and the overall
                                     system functionality. Users have the ability to register or unregister for events and manage
                                     their profiles effectively.'
-                            link_gitHub=''
+                            link_gitHub='https://github.com/AdegasDa/Events_Management'
                             technologies={['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP']}
                             date_start='02-04-2024'
                             date_end='24-05-2024'

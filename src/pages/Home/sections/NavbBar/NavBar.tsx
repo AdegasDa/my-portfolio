@@ -27,7 +27,7 @@ const NavBar = () => {
 
     return (
         <>
-            <header className="md:absolute inset-x-0 top-0 z-50">
+            <header className="md:absolute inset-x-0 top-0 z-50 header">
                 <div className='mx-auto md:hidden absolute p-8 top-0 right-0'>
                     <button className='header_button' onClick={handleMenu}>
                         <FontAwesomeIcon icon={faBars} />
