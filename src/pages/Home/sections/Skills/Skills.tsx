@@ -25,14 +25,7 @@ const About = () => {
                                         <SkillCard skill='SQL' rate={5} />
                                         <SkillCard skill='MVC architecture' rate={5} />
 
-                                        {/* <li>JavaScript - Skilled in developing dynamic and interactive web applications.</li>
-                                        <li>JQuery - Experienced in simplifying HTML document traversing, event handling, and animating for web development.</li>
-                                        <li>PHP - Experienced in backend development and building reliable server-side applications.</li>
-                                        <li>HTML & CSS - Capable of designing responsive and visually appealing websites.</li>
-                                        <li>Java - Proficient in object-oriented programming and developing scalable applications.</li>
-                                        <li>Bootstrap & Tailwind - Proficient in structuring and styling web pages for a seamless user experience.</li>
-                                        <li>React - Proficient in creating and managing complex user interfaces, leveraging component-based architecture to build scalable and maintainable web applications.</li> */}
-                                    </ul>
+                                       </ul>
                                 </div>
                             </div>
                             <div className="col-span-6 max-w-xl">
@@ -44,8 +37,6 @@ const About = () => {
                                         <SkillCard skill='Git' rate={2} />
                                         <SkillCard skill='Agile Projects' rate={3} />
                                     </ul>
-                                        {/* <li>Angular - Basic understanding of this framework for building single-page applications.</li>
-                                        <li>Agile Projects - Familiar with agile methodologies and experienced in working with agile teams.</li> */}
                                 </div>
                             </div>
                         </div>
