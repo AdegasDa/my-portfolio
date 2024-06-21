@@ -7,8 +7,8 @@ import eventsInfo from '../../../../assets/images/events_info.png'
 import homeTriathlon from '../../../../assets/images/homeTriathlon.png'
 
 const Projects = () => {
-    const Triathlon = 'http://localhost:5173/Triathlon_Calculator.zip';
-    const Event = 'http://localhost:5173/Event_Management.zip';
+    const Triathlon = 'https://danieladegas.netlify.app/Triathlon_Calculator.zip';
+    const Event = 'https://danieladegas.netlify.app/Event_Management.zip';
 
     return (
         <>
@@ -21,7 +21,7 @@ const Projects = () => {
                             title='Event Registration Management System'
                             detail='This project created a user-friendly platform for event registration. Users can browse and sign up for events, 
                             and manage their profiles. System managers oversee user and event management and can export registration lists to Excel.'
-                            link_gitHub='https://github.com/AdegasDa/Events_Management'
+                            link_gitHub='https://danieladegas.netlify.app/Events_Management'
                             technologies={['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP']}
                             date_start='02-04-2024'
                             date_end='24-05-2024'
@@ -32,7 +32,7 @@ const Projects = () => {
                             title='Triathlon Race Gap Calculator '
                             detail='This project aimed to develop a web application for triathlon race analysis. 
                             Users input reference values and segment times, then calculate time gaps and overall performance.'
-                            link_gitHub='https://github.com/AdegasDa/Triathlon_Time_Calculator'
+                            link_gitHub='https://danieladegas.netlify.app/Triathlon_Time_Calculator'
                             technologies={['Angular', 'TypeScript']}
                             date_start='27-05-2024'
                             date_end='14-06-2024'

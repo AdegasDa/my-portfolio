@@ -14,7 +14,7 @@ const NavBar = () => {
         });
     }
 
-    const Resume = 'http://localhost:5173/DanielAdegas_Resume.pdf';
+    const Resume = 'https://danieladegas.netlify.app/DanielAdegas_Resume.pdf';
 
     const downloadFileAtUrl = (url:string) => {
         const fileName = url.split('/').pop() || '';
