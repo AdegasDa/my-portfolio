@@ -28,3 +28,5 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f1097b36-b933-45c7-9f2f-d198373004fb/deploy-status)](https://app.netlify.com/sites/danieladegas/deploys)
