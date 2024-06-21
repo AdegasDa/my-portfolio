@@ -51,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardInterface> = ({ title, detail, technologi
                     <motion.div
                     initial={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.2 }}
-                    whileHover={{ opacity: 1, scale: 2 }}
+                    whileHover={{ opacity: 1, scale: 1 }}
                     >
                     <img src={image_1} alt="" />
                     </motion.div>
