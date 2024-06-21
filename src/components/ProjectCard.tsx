@@ -52,7 +52,7 @@ const ProjectCard: React.FC<ProjectCardInterface> = ({ title, detail, technologi
                 </motion.div>
             </div>
             <div className='flex-grow'>
-                <h5 className='text-custom-light font-bold mb-4'>{title}</h5>
+                <h5 className='text-custom-light text-xl font-bold mb-4'>{title}</h5>
                 <p className='text-custom-primary'>
                     {detail}
                 </p>
