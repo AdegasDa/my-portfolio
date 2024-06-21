@@ -3,6 +3,9 @@ import '../../../../index.css'
 import ProjectCard from '../../../../components/ProjectCard';
 import Section from '../../../../components/Section';
 
+import eventsInfo from '../../../../assets/images/events_info.png'
+import homeTriathlon from '../../../../assets/images/homeTriathlon.png'
+
 const Projects = () => {
     const Triathlon = 'http://localhost:5173/Triathlon_Calculator.zip';
     const Event = 'http://localhost:5173/Event_Management.zip';
@@ -16,30 +19,25 @@ const Projects = () => {
                         <div className="grid gap-4 xl:grid-cols-2">
                             <ProjectCard
                             title='Event Registration Management System'
-                            detail='This project involved developing a user-friendly platform to streamline the registration
-                                    process for events. The system allows users to browse available events and register. At the
-                                    end of the registration period, the system manager can export a list of registered users to MS
-                                    Excel. The system manager holds responsibilities for managing users, events, and the overall
-                                    system functionality. Users have the ability to register or unregister for events and manage
-                                    their profiles effectively.'
+                            detail='This project created a user-friendly platform for event registration. Users can browse and sign up for events, 
+                            and manage their profiles. System managers oversee user and event management and can export registration lists to Excel.'
                             link_gitHub='https://github.com/AdegasDa/Events_Management'
                             technologies={['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP']}
                             date_start='02-04-2024'
                             date_end='24-05-2024'
                             link_folder={Event}
+                            image_1={eventsInfo}
                             /> 
                             <ProjectCard
                             title='Triathlon Race Gap Calculator '
-                            detail='The objective of this project was to create a web application that allows users to input
-                                reference values and their own segment times for a triathlon race. Upon pressing a
-                                calculation button, the application calculates the time gaps for each segment and the final
-                                time, providing feedback on performance with analytical calculation. Users can reuse or
-                                modify the entered data for new calculations without losing previous inputs.'
+                            detail='This project aimed to develop a web application for triathlon race analysis. 
+                            Users input reference values and segment times, then calculate time gaps and overall performance.'
                             link_gitHub='https://github.com/AdegasDa/Triathlon_Time_Calculator'
                             technologies={['Angular', 'TypeScript']}
                             date_start='27-05-2024'
                             date_end='14-06-2024'
                             link_folder={Triathlon}
+                            image_1={homeTriathlon}
                             />
                         </div>
                     </div>

@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faFolder } from '@fortawesome/free-regular-svg-icons'
 import { motion } from 'framer-motion'
-
 interface ProjectCardInterface {
     title: String,
     detail: String,
@@ -13,9 +12,10 @@ interface ProjectCardInterface {
     technologies: string[],
     link_gitHub: string,
     link_folder: string,
+    image_1: string,
 }
 
-const ProjectCard: React.FC<ProjectCardInterface> = ({ title, detail, technologies, link_gitHub, date_start, date_end, link_folder }) => {
+const ProjectCard: React.FC<ProjectCardInterface> = ({ title, detail, technologies, link_gitHub, date_start, date_end, link_folder, image_1 }) => {
 
     const downloadFileAtUrl = (url:string) => {
         const fileName = url.split('/').pop() || '';
@@ -47,8 +47,17 @@ const ProjectCard: React.FC<ProjectCardInterface> = ({ title, detail, technologi
                         <a href={link_gitHub} target='_blank'><FontAwesomeIcon className='h-9 text-custom-light' icon={faGithub} /></a>
                     </div>
                 </div>
+                <div className='my-5'>
+                    <motion.div
+                    initial={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.2 }}
+                    whileHover={{ opacity: 1, scale: 2.4 }}
+                    >
+                    <img src={image_1} alt="" />
+                    </motion.div>
+                </div>
                 <div className='flex-grow'>
-                    <h5 className='text-custom-light font-bold mt-6 mb-4'>{title}</h5>
+                    <h5 className='text-custom-light font-bold mb-4'>{title}</h5>
                     <p className='text-custom-primary'>
                         {detail}
                     </p>
