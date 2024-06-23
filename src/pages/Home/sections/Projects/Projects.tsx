@@ -47,7 +47,7 @@ const Projects = () => {
                                 link_folder={Triathlon}
                                 image_1={homeTriathlon}
                                 />
-                                <ProjectCard
+                                {/* <ProjectCard
                                 title='Triathlon Race Gap Calculator '
                                 detail='This project aimed to develop a web application for triathlon race analysis. 
                                 Users input reference values and segment times, then calculate time gaps and overall performance.'
@@ -57,7 +57,7 @@ const Projects = () => {
                                 date_end='14-06-2024'
                                 link_folder={Triathlon}
                                 image_1={homeTriathlon}
-                                />
+                                /> */}
                             </div>
                         </div>
                     </div>
