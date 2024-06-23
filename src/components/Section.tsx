@@ -13,7 +13,7 @@ const ProjectCard: React.FC<ProjectCardInterface> = ({ children, id }) => {
     return (
         <motion.div
         initial={{ opacity: 0, scale: 1, x: -180}}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.8 }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}
         >
             <section id={`${id}`}>

@@ -12,7 +12,7 @@ const Hero = () => {
         <>
             <Section id='hero'>
                 <div className="sm:h-screen flex">
-                    <div className="md:basis-3/6 md:mx-auto md:my-auto md:p-0 m-8">
+                    <div className="md:basis-7/12 md:mx-auto md:my-auto md:p-0 mx-8 mb-8">
                         <p className=" text-xl text-custom-light">Hi, my name is</p>
                         <h1 className=" text-6xl m-0 my-3 text-custom-light font-bold">Daniel Adegas.</h1>
                         <h2 className=" text-6xl m-0 mb-3 text-custom-secondary font-bold">On The Journey Of</h2>

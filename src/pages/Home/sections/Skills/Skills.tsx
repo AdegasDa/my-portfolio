@@ -8,7 +8,7 @@ const About = () => {
         <>
             <Section id='skills'>
                 <div className="sm:h-screen flex">
-                    <div className="md:basis-3/6 w-full mx-auto my-auto md:p-0 p-8">
+                    <div className="md:basis-7/12 w-full mx-auto my-auto md:p-0 p-8">
                         <h4 className="text-3xl text-custom-dark mb-10 font-bold">03. <span className="text-custom-secondary font-bold">Skills</span></h4>
                         <div className="grid md:grid-flow-col sm:gap-16 gap-8">
                             <div className="col-span-6 max-w-xl">
@@ -25,7 +25,7 @@ const About = () => {
                                         <SkillCard skill='SQL' rate={5} />
                                         <SkillCard skill='MVC architecture' rate={5} />
 
-                                       </ul>
+                                    </ul>
                                 </div>
                             </div>
                             <div className="col-span-6 max-w-xl">
