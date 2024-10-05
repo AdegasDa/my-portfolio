@@ -15,7 +15,7 @@ const NavBar = () => {
         });
     }
 
-    const Resume = 'https://danieladegas.netlify.app/DanielAdegas_Resume.pdf';
+    const Resume = 'https://danieladegas.netlify.app/danieladegas_cv.pdf';
 
     const downloadFileAtUrl = (url:string) => {
         const fileName = url.split('/').pop() || '';
