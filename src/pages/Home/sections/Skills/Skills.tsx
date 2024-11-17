@@ -23,6 +23,7 @@ const About = () => {
                                         <SkillCard skill='PHP' rate={4} />
                                         <SkillCard skill='Bootstrap & Tailwind' rate={5} />
                                         <SkillCard skill='SQL' rate={5} />
+                                        <SkillCard skill='Python' rate={4} />
                                         <SkillCard skill='MVC architecture' rate={5} />
 
                                     </ul>
